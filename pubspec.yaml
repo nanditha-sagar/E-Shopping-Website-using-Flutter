@@ -1,0 +1,46 @@
+name: e_shoppsy
+description: "E-Shoppsy - Your trusted online grocery and fashion platform."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  image_picker: ^1.1.1
+  shared_preferences: ^2.3.2 # ✅ For saving profile or settings data
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1 # ✅ For generating custom app icon
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/apples.jpg
+    - assets/images/logo.jpg
+    - assets/images/banana.jpg
+    - assets/images/tomatoes.jpeg
+    - assets/images/rice.jpg
+    - assets/images/tshirt.jpg
+    - assets/images/jacket.jpg
+    - assets/images/shoes.jpg
+    - assets/images/bag.jpeg
+    - assets/images/ceo.jpg
+    - assets/images/coo.jpg
+    - assets/images/cto.png
+
+# ✅ App Icon Configuration (for flutter_launcher_icons)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.jpg"
+  min_sdk_android: 21
